@@ -39,8 +39,11 @@ public:
         status = 100;
     }
     void AddAnimal(int& maxAnimal) {
-        cout << "Вы приютили зверушку" << endl;
-        maxAnimal++;
+        if (maxAnimal == 7) { cout<< "Больше нельзя" << endl; }
+        else {
+            cout << "Вы приютили зверушку" << endl;
+            maxAnimal++;
+        }
     };
 };
 
